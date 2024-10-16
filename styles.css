@@ -1,0 +1,39 @@
+body{background-color: rgb(103, 46, 194);
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+/* Style for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between the grid items */
+    justify-items: center; /* Center items horizontally */
+    margin-top: 20px;
+}
+
+/* Style for the arts container */
+.grid-arts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columns */
+    gap: 0px; /* Spacing between the grid items */
+    justify-items: center; /* Center items horizontally */
+    margin-top: 20px;
+}
+/* Styles for the info box */
+.info-box {
+    background-color: rgb(76, 8, 139); /* Box background color */
+    color: rgb(255, 255, 255);            /* Text color inside the box */
+    padding: 20px;           /* Padding inside the box */
+    border-radius: 15px;     /* Rounded corners */
+    border: 2px solid #ccc;  /* Border around the box */
+    width: 50%;              /* Box width (adjust as needed) */
+    margin: 0 auto 20px auto;/* Centering the box */
+}
+
+
