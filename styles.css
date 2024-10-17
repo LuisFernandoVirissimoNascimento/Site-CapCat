@@ -18,13 +18,10 @@ padding: 0;
 }
 
 .grid-arts {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    gap: 5px; /* Add some spacing between the grid items */
-    justify-items: center; /* Center items horizontally */
-    align-items: end; /* Align items to the bottom */
-    margin-top: 20px;    
-    align-items: start; /* Align items to the top */
+    width: 1400px;
+    columns: 5;
+    margin: 10px auto;
+    column-gap: 5px;
 }
 
 .image-container {
@@ -44,6 +41,7 @@ padding: 0;
     padding: 10px; /* Optional padding around the image */
     overflow: hidden; /* Ensure rounded corners apply */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
+    margin-bottom: 5px;
 }
 
 .image-container-not-done {
@@ -53,11 +51,13 @@ padding: 0;
     padding: 10px; /* Optional padding around the image */
     overflow: hidden; /* Ensure rounded corners apply */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
+    margin-bottom: 5px;
 }
 
 .image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    display: block;
+    width: 100%; /* Make the image responsive within the container */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 /* Styles for the info box */
