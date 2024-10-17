@@ -8,6 +8,20 @@ margin: 0;
 padding: 0;
 }
 
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background: #7900b1;
+    color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 /* Style for the grid container */
 .grid-container {
     display: grid;
@@ -24,7 +38,10 @@ padding: 0;
     column-gap: 5px;
 }
 
-.image-container {
+.image-container,
+.image-container-done,
+.image-container-not-done,
+.image-container-in-use {
     display: inline-block;
     background-color: rgb(105, 64, 255); /* Background color for the square */
     border-radius: 15px; /* Rounded corners */
@@ -32,26 +49,19 @@ padding: 0;
     overflow: hidden; /* Ensure rounded corners apply */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
     align-items: end; /* Align items to the bottom */
+
 }
 
 .image-container-done {
-    display: block; /* Use block layout for images */
-    background-color: rgb(64, 255, 182); /* Background color for the square */
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px; /* Optional padding around the image */
-    overflow: hidden; /* Ensure rounded corners apply */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
-    margin-bottom: 5px;
+    background-color: rgb(64, 255, 182); /* Green */
 }
 
 .image-container-not-done {
-    display: block; /* Use block layout for images */
-    background-color: rgb(255, 64, 64); /* Background color for the square */
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px; /* Optional padding around the image */
-    overflow: hidden; /* Ensure rounded corners apply */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
-    margin-bottom: 5px;
+    background-color: rgb(255, 64, 64); /* Red */
+}
+
+.image-container-in-use {
+    background-color: rgb(198, 255, 64); /* Yellow */
 }
 
 .image {
