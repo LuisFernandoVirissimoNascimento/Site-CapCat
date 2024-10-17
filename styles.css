@@ -23,7 +23,8 @@ padding: 0;
     gap: 5px; /* Add some spacing between the grid items */
     justify-items: center; /* Center items horizontally */
     align-items: end; /* Align items to the bottom */
-    margin-top: 20px;
+    margin-top: 20px;    
+    align-items: start; /* Align items to the top */
 }
 
 .image-container {
@@ -33,12 +34,30 @@ padding: 0;
     padding: 10px; /* Optional padding around the image */
     overflow: hidden; /* Ensure rounded corners apply */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
+    align-items: end; /* Align items to the bottom */
+}
+
+.image-container-done {
+    display: block; /* Use block layout for images */
+    background-color: rgb(64, 255, 182); /* Background color for the square */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Optional padding around the image */
+    overflow: hidden; /* Ensure rounded corners apply */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
+}
+
+.image-container-not-done {
+    display: block; /* Use block layout for images */
+    background-color: rgb(255, 64, 64); /* Background color for the square */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Optional padding around the image */
+    overflow: hidden; /* Ensure rounded corners apply */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
 }
 
 .image {
-    display: block;
-    width: 100%; /* Make the image responsive within the container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Styles for the info box */
