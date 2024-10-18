@@ -115,7 +115,7 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
     padding: 10px; /* Optional padding around the image */
     overflow: hidden; /* Ensure rounded corners apply */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a modern look */
-    width: 270px;
+    width: 240px;
     max-height: fit-content;
 }
 
