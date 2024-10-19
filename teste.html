@@ -1,0 +1,22 @@
+ <!-- Video 1: Initial animation -->
+ <video id="initial-video" autoplay muted>
+    <source src="Corgi Courier Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Video 2: Looping animation (hidden initially) -->
+  <video id="loop-video" muted loop style="display: none;">
+    <source src="Giant Knight Orange.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    const initialVideo = document.getElementById('initial-video');
+    const loopVideo = document.getElementById('loop-video');
+  
+    // When the initial video ends, switch to the looping video
+    initialVideo.onended = function() {
+      initialVideo.style.display = 'none';  // Hide the initial video
+      loopVideo.style.display = 'block';    // Show the loop video
+      loopVideo.play();                     // Play the loop video
+    };
+  </script>

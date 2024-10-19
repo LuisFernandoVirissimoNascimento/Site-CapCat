@@ -15,23 +15,51 @@
     </div>
     <h1>Low Poly</h1>
     <div class="info-box">
-        <p>Modelos Totais : 5</p>
+        <!-- <p>Modelos Totais : 5</p> -->
+         <h1>Uma coleção de todos os modelos 3D e animações low poly que já fiz.</h1>
     </div>
+    <!-- <button onclick="toggleGIFs()">Pause/Despause gifs</button> -->
+    <script>
+        let gifsPaused = false;
+
+        function toggleGIFs() {
+            const gifImages = document.querySelectorAll('img.image');
+
+            gifImages.forEach(img => {
+                if (gifsPaused) {
+                    // Unpause GIF by restoring the original src
+                    img.src = img.getAttribute('data-gif-src');
+                } else {
+                    // Pause GIF by replacing it with a static image
+                    img.setAttribute('data-gif-src', img.src);  // Store the original GIF src
+                    img.src = img.getAttribute('data-static');
+                }
+            });
+
+            gifsPaused = !gifsPaused;
+        }
+    </script>
     <div class="grid-arts">
         <div class="image-container">
-            <img src="../img/LowPoly/Foxy.gif" alt="" class="image">
+            <img src="../img/LowPoly/Guitar.gif" alt="" class="image" data-static = "../img/LowPoly/Dados_Pessoais_B.png">
+        </div>
+        <div class="image-container">
+            <img src="../img/LowPoly/Tenis.gif" alt="" class="image" data-static = "../img/LowPoly/Dados_Pessoais_B.png">
+        </div>
+        <div class="image-container">
+            <img src="../img/LowPoly/Humanoid.gif" alt="" class="image" data-static = "../img/LowPoly/Dados_Pessoais_B.png">
+        </div>
+        <div class="image-container">
+            <img src="../img/LowPoly/Fishing Girl Throw.gif" alt="" class="image" data-static = "../img/LowPoly/Dados_Pessoais_B.png">
+        </div>
+        <div class="image-container">
+            <img src="../img/LowPoly/Foxy.gif" alt="" class="image" data-static = "../img/LowPoly/Dados_Pessoais_B.png">
         </div>
         <div class="image-container">
             <img src="../img/LowPoly/Fenneko.png" alt="" class="image">
         </div>
         <div class="image-container">
-            <img src="../img/LowPoly/FoxySis.png" alt="" class="image">
-        </div>
-        <div class="image-container">
             <img src="../img/LowPoly/FoxSisVSCandle.gif" alt="" class="image">
-        </div>
-        <div class="image-container">
-            <img src="../img/LowPoly/FoxSisVsCandleRainbow.gif" alt="" class="image">
         </div>
         <div class="image-container">
             <img src="../img/LowPoly/Corgi Courier.gif" alt="" class="image">
