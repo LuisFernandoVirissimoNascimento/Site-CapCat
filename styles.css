@@ -17,8 +17,8 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
     padding: 10px 16px;
     height: auto; /* Adjusts height based on content */
     width: 100vw; /* Ensures full width of the viewport */
-    background: #7900b1;
-    color: #f1f1f1;
+    background: #f0f0f0;
+    color: #000000;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -42,32 +42,6 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
     column-gap: 5px;
 }
 
-.image-container,
-.image-container-done,
-.image-container-not-done,
-.image-container-in-use {
-    display: inline-block;
-    background-color: rgb(105, 64, 255); /* Background color for the square */
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px; /* Optional padding around the image */
-    overflow: hidden; /* Ensure rounded corners apply */
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5); /* Optional shadow for a modern look */
-    align-items: end; /* Align items to the bottom */
-
-}
-
-.image-container-done {
-    background-color: rgb(64, 255, 182); /* Green */
-}
-
-.image-container-not-done {
-    background-color: rgb(255, 64, 64); /* Red */
-}
-
-.image-container-in-use {
-    background-color: rgb(198, 255, 64); /* Yellow */
-}
-
 .image {
     width: 100%; /* Make the image responsive within the container */
     height: auto; /* Maintain the aspect ratio */
@@ -75,7 +49,7 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
 
 /* Styles for the info box */
 .info-box {
-    background-color: rgb(76, 8, 139); /* Box background color */
+    background-color: rgb(0, 0, 0); /* Box background color */
     color: rgb(255, 255, 255);            /* Text color inside the box */
     padding: 20px;           /* Padding inside the box */
     border-radius: 15px;     /* Rounded corners */
@@ -111,7 +85,7 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
     font-size: x-large;
     text-shadow: 1px 1px #ffffff;
     border: 2px solid rgb(255, 255, 255);    
-    background-color: rgb(105, 64, 255); /* Background color for the square */
+    background-color: #838086;
     border-radius: 15px; /* Rounded corners */
     padding: 10px; /* Optional padding around the image */
     overflow: hidden; /* Ensure rounded corners apply */
