@@ -13,6 +13,7 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
 /* Header */
 .header {
     position: sticky;
+    z-index: 9999;   /* Ensures it's on top of everything */
     top: 0;
     padding: 10px 16px;
     height: auto; /* Adjusts height based on content */
@@ -114,3 +115,15 @@ video {
     height: 100%;
     object-fit: cover;  /* Ensures the video covers the entire area without distortion */
   }
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+  
