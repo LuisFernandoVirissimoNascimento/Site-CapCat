@@ -8,10 +8,13 @@ margin: 0;
 padding: 0;
 width: 100vw; /* Ensures body is exactly the viewport width */
 overflow-x: hidden; /* Prevents horizontal scrolling */
+min-height: 100vh;
 }
 
-/* Header */
-.header {
+/* Header */ 
+/* https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c */
+/* ^^ Check for header anim */
+header {
     position: sticky;
     z-index: 9999;   /* Ensures it's on top of everything */
     top: 0;
@@ -26,6 +29,22 @@ overflow-x: hidden; /* Prevents horizontal scrolling */
     box-sizing: border-box; /* Ensures padding is included in the total size */
 }
 
+/* Header */
+footer {
+    margin-top: auto;
+    position: sticky;
+    z-index: 9999;   /* Ensures it's on top of everything */
+    top: 0;
+    padding: 10px 16px;
+    height: auto; /* Adjusts height based on content */
+    width: 100vw; /* Ensures full width of the viewport */
+    background: #f0f0f0;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box; /* Ensures padding is included in the total size */
+}
 
 /* Style for the grid container */
 .grid-container {
@@ -126,4 +145,25 @@ video {
     opacity: 1;
     transform: translateX(0);
 }
+
+
+/* unvisited link */
+a:link {
+    color: green;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(182, 214, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
   
