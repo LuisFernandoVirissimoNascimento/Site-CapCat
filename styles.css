@@ -50,13 +50,14 @@ footer {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Spacing between the grid items */
+    gap: 5px; /* Spacing between the grid items */
+    column-gap: 5px;
     justify-items: center; /* Center items horizontally */
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .grid-arts {
-    width: 1400px;
+    width: 1350px;
     columns: 5;
     margin: 10px auto;
     column-gap: 5px;
