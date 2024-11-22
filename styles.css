@@ -6,8 +6,8 @@ justify-content: center;
 align-items: center;
 margin: 0;
 padding: 0;
-width: 100vw; /* Ensures body is exactly the viewport width */
-overflow-x: hidden; /* Prevents horizontal scrolling */
+width: 100vw; 
+overflow-x: hidden; 
 min-height: 100vh;
 }
 
@@ -168,3 +168,37 @@ a:link {
     color: blue;
   }
   
+
+  @media (max-width: 767px){
+    .test-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        background-color: #F80397;
+        padding: 10px;
+    }
+
+    .test-grid > div{
+        background-color: #06B7DA;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px){
+    .test-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        background-color: #0328f8;
+        padding: 10px;
+    }
+
+    .test-grid > div{
+        background-color: #c5da06;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+}
