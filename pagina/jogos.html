@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <title>Jogos</title>
-    <script src="main.js"></script>
+    <script defer src="../main.js"></script>
     <link rel="stylesheet" href="../styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/site-icon.ico">
@@ -14,26 +14,35 @@
             <img src="../img/Voltar_B.png" alt="Voltar" width="50px">
         </a>
     </header>
-
-
-
-
-    
-    <h1>The grid-template columns property</h1>
-    <p>use the <em>grid-template-columns</em> property to specify the size of each column.</p>
-
-    <div class="test-grid">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
+    <div>
+        <input type="text" placeholder="Digite seu Nome" class="input required" oninput="nameValidate(0)">
+        <span class="span-required">O nome deve ter 3 caracteres</span>
+    </div>
+    <div>
+        <input type="text" placeholder="Digite seu Nome" class="input required" oninput="nameValidate(1)">
+        <span class="span-required">O nome deve ter 3 caracteres</span>
     </div>
 
+    <script>
+        const inputs = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.span-required');
+        function nameValidate(index){
+            if(inputs[index].value.length <3){
+                SetError(index);
+            }else{
+                HideError(index);
+            }
+        }
+
+        function SetError(index){
+            spans[index].style.display = 'block'
+            spans[index].style.color = 'red'
+        }
+
+        function HideError(index){
+            spans[index].style.display = 'none'
+        }
+    </script>
 
 </body>
 </html>

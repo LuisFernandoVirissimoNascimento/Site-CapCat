@@ -99,7 +99,7 @@ footer {
     align-items: start; /* Align images to the top */
 }
 
-.coluna, .colunaDone, .colunaNotDone, .colunaInUse{
+.coluna, .colunaDone, .colunaNotDone, .colunaInUse, .colunaAbandoned{
     display: inline-block;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -125,6 +125,10 @@ footer {
 
 .colunaInUse{
     background-color: #F80397;
+}
+
+.colunaAbandoned{
+    background-color: #03f87e;
 }
 
 video {
@@ -201,4 +205,10 @@ a:link {
         padding: 20px;
         font-size: 30px;
     }
+}
+
+.span-required{
+    display: none;
+    font-size: 12;
+    border: 12px white;
 }
