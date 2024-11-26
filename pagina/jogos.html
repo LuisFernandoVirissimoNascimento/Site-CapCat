@@ -2,34 +2,47 @@
 <html lang="pt-br">
 <head>
     <title>Jogos</title>
-    <script src="main.js"></script>
+    <script defer src="../main.js"></script>
     <link rel="stylesheet" href="../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/site-icon.ico">
 </head>
 <body>
-    <div class="header" id="myHeader">
+    <header>
         <h2>Capcat - Desenvolvendo Diversão</h2>
         <a href="../index.html">
             <img src="../img/Voltar_B.png" alt="Voltar" width="50px">
         </a>
+    </header>
+    <div>
+        <input type="text" placeholder="Digite seu Nome" class="input required" oninput="nameValidate(0)">
+        <span class="span-required">O nome deve ter 3 caracteres</span>
     </div>
-    <h1>Jogos</h1>
-    <div class="info-box">
-        <p>Esses são jogos que eu participei como programador ou criador.</p>
-        <p>Nem todos os jogos que eu fiz estão aqui.</p>
+    <div>
+        <input type="text" placeholder="Digite seu Nome" class="input required" oninput="nameValidate(1)">
+        <span class="span-required">O nome deve ter 3 caracteres</span>
     </div>
 
-    <p>Mushrun</p>
-    <a href="https://callial.itch.io/mushrun">link</a>
+    <script>
+        const inputs = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.span-required');
+        function nameValidate(index){
+            if(inputs[index].value.length <3){
+                SetError(index);
+            }else{
+                HideError(index);
+            }
+        }
 
-    <p>War Criminal Witches</p>
-    <a href="https://nandoofficial.itch.io/wcw">link</a>
+        function SetError(index){
+            spans[index].style.display = 'block'
+            spans[index].style.color = 'red'
+        }
 
-    <p>Time Thief Tries Triumph</p>
-    <a href="https://nandoofficial.itch.io/time-thief-tries-triump">link</a>
-    
-    <a href="../index.html">
-        <img src="../img/Voltar_B.png" alt="Voltar" width="250px">
-    </a>
+        function HideError(index){
+            spans[index].style.display = 'none'
+        }
+    </script>
+
 </body>
 </html>
