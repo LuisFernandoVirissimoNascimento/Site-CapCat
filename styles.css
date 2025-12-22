@@ -21,15 +21,15 @@ header {
     padding: 10px 16px;
     height: auto; /* Adjusts height based on content */
     width: 100vw; /* Ensures full width of the viewport */
-    background: #f0f0f0;
-    color: #000000;
+    background: #A42945;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     display: flex;
     box-sizing: border-box; /* Ensures padding is included in the total size */
 }
 
-/* Header */
+/* Footer */
 footer {
     margin-top: auto;
     position: sticky;
@@ -38,8 +38,8 @@ footer {
     padding: 10px 16px;
     height: auto; /* Adjusts height based on content */
     width: 100vw; /* Ensures full width of the viewport */
-    background: #f0f0f0;
-    color: #000000;
+    background: #A42945;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     display: flex;
