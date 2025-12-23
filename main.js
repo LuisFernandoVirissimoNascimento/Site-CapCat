@@ -73,6 +73,7 @@ const planRules = {
                 </li>
                 <li><strong>Chat de Voz Online:</strong> R$ 250</li>
                 <li><strong>Usar voz para ações:</strong> R$ 50</li>
+                <li><strong>Arte, Música e Design:</strong> R$ Taxa do Artista + R$ 25 ( Serviço de contato e Gerenciamento )</li>
             </ul>
             <p style="font-size: 0.85rem; color: #686464ff; margin-top: 15px;">
                 * Os valores acima são adicionais ao preço base do pacote.
