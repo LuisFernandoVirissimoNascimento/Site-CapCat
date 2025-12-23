@@ -68,6 +68,9 @@ const planRules = {
                 <li><strong>Tradução (PT-BR / Inglês):</strong> R$ 15</li>
                 <li><strong>Suporte a Controle/Gamepad:</strong> R$ 15</li>
                 <li><strong>Conquistas:</strong> R$ 10</li>
+                <li><strong>Publicação na Steam:</strong> R$ 500 ( Taxa da Steam ) + R$ 100 ( Serviço )
+                <li><strong>Multiplayer Local ou Online ( Online requer Publicação na Steam ):</strong> R$ 300
+                </li>
             </ul>
             <p style="font-size: 0.85rem; color: #686464ff; margin-top: 15px;">
                 * Os valores acima são adicionais ao preço base do pacote.
