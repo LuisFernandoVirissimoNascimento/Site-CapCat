@@ -17,31 +17,68 @@
 
             <nav class="header-nav">
                 <a href="#" style="color: white;"><u>Desenvolva o seu jogo</u></a>
-                <a href="#" style="color: white;">Jogos da CapCat</a>
+                <!-- <a href="#" style="color: white;">Jogos da CapCat</a>
                 <a href="#" style="color: white;">Sobre Nós</a>
-                <a href="#" style="color: white;">Contato</a>
+                <a href="#" style="color: white;">Contato</a> -->
             </nav>
         </div>
     </header>
+    <main>
+    <section class="pricing-section">
+        <div class="pricing-header">
+            <h2>Nossos Pacotes</h2>
+            <p>Desenvolvimento acessível para transformar sua ideia em realidade.</p>
+        </div>
 
-    <!-- Content wrapper to push footer down -->
-    <div class="content-wrapper">
-        <!-- Use Nav for menus, header for quicker menus -->
-        <nav>
-            <div class="grid-container">
-                <!-- <a href="pagina/referencias.html"><img src="./img/Referencias.png" alt="Referencias" width="350px"></a> -->
-                <a href="pagina/me_conheca.html"><img src="./img/Me_Conheca.gif" alt="Me Conheça" width="350px"></a>
-                <!-- <a href="pagina/conquistas.html"><img src="./img/Low_Poly.gif" alt="Me Contate" width="350px"></a> -->
-                <!-- <a href="pagina/jogos.html"><img src="./img/Low_Poly.gif" alt="Jogos" width="350px"></a> -->
-                <!-- <a href="pagina/low_poly.html"><img src="./img/Low_Poly.gif" alt="Artes" width="350px"></a> -->
-                <!-- <a href="pagina/jogos.html"><img src="./img/MusicasAi.png" alt="Musicas AI" width="350px"></a> -->
-                <!-- <a href="pagina/pixel_art.html"><img src="./img/Low_Poly.gif" alt="Artes" width="350px"></a> -->
-                
+        <div class="grid-container">
+            <div class="price-card">
+                <div class="price-badge">Popular</div>
+                <h3>Jogo Simples</h3>
+                <div class="price-value">R$ 25<span>/projeto</span></div>
+                <ul class="price-features">
+                    <li>Mecânica Base</li>
+                    <li>Direito Comercial</li>
+                    <li>Exportação para Web/PC</li>
+                    <li>Suporte de 1 mês gratuito</li>
+                </ul>
+                <button class="price-button" onclick="openModal('simples')">Começar Agora</button>
             </div>
-        </nav>
-        <!-- Make use of this to make a page about your favorite music -->
-        <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/fMrpVDYZCbU" title="Drift [With Lyrics] (Happy Chaos Theme) - Guilty Gear Strive OST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+            <div class="price-card featured">
+                <div class="price-badge">Melhor Valor</div>
+                <h3>Jogo Completo</h3>
+                <div class="price-value">R$ 480<span>/projeto</span></div>
+                <ul class="price-features">
+                    <li>Sistemas complexos</li>
+                    <li>Mais de 10 horas de gameplay</li>
+                    <li>Otimização AAA</li>
+                    <li>Código Fonte e Direitos Comerciais</li>
+                </ul>
+                <button class="price-button" onclick="openModal('completo')">Quero este!</button>
+            </div>
+
+            <div class="price-card">
+                <h3>Extras</h3>
+                <div class="price-value">Consultar</div>
+                <ul class="price-features">
+                    <li>Modificações que tornaram seu jogo super único no mercado</li>
+                    <li>Entre no mercado da Steam</li>
+                    <li>Multiplayer online</li>
+                    <li>Receba só o dinheiro enquanto a CapCat cuida da burocracia</li>
+                </ul>
+                <button class="price-button" onclick="openModal('extra')">Quero o melhor projeto!</button>
+            </div>
+        </div>
+    </section>
+    <div id="priceModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Título do Plano</h2>
+        <div id="modalRules" class="modal-body"></div>
+        <button class="confirm-button" onclick="closeModal()">Entrei em contato</button>
     </div>
+</div>
+</main>
     
     <footer>
         <caption>Desenvolvendo Diversão</caption>

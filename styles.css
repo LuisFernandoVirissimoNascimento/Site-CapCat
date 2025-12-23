@@ -25,6 +25,7 @@ body {
     background-color: #A42945;
 }
 
+
 .header-inner {
     max-width: 1400px;
     margin: 0 auto;
@@ -341,4 +342,225 @@ u {
     .test-grid > div {
         background-color: #c5da06;
     }
+}
+
+
+/* Pricing Section Styles */
+.pricing-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flow-root;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-header h2 {
+    font-size: 2.5rem;
+    color: #A42945;
+    margin-top: 0; /* Change this from default to 0 */
+    margin-bottom: 10px;
+}
+
+/* Price Cards */
+.price-card {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #A42945;
+}
+
+/* Highlight the middle card */
+.price-card.featured {
+    border-color: #F80397;
+    background-color: #fff9fc;
+    transform: scale(1.05);
+}
+
+.price-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.price-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #F80397;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price-card h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.price-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #A42945;
+}
+
+.price-value span {
+    font-size: 1rem;
+    color: #777;
+    font-weight: normal;
+}
+
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
+}
+
+.price-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.price-features li::before {
+    content: "✓";
+    color: #03f87e;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.price-button {
+    background-color: #A42945;
+    color: white !important;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.price-button:hover {
+    background-color: #F80397;
+    opacity: 1 !important;
+}
+
+.price-button.secondary {
+    background-color: #333;
+}
+
+/* Responsive adjustment for the 3-column grid */
+@media (max-width: 900px) {
+    .price-card.featured {
+        transform: scale(1);
+    }
+}
+
+/* Modal Overlay (Background) */
+/* Update these two classes in your styles.css */
+
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    /* ADD THIS: padding ensures the modal doesn't touch the very edges of the screen on mobile */
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: slideDown 0.3s ease-out;
+    
+    /* ADD THESE THREE LINES: */
+    max-height: 90vh; /* Keeps it from being taller than the screen */
+    overflow-y: auto; /* Adds the scrollbar if content is too long */
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-button:hover { color: #A42945; }
+
+/* Add/Update this in styles.css */
+#modalTitle {
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; /* This replaces the <hr> neatly */
+    font-size: 1.5rem;
+    color: #A42945;
+}
+
+.modal-body {
+    margin-top: 15px; /* Control exactly how much space you want here */
+    line-height: 1.6;
+    color: #333;
+}
+
+.confirm-button {
+    width: 100%;
+    background-color: #03f87e; /* Using your "Abandoned" green for success */
+    border: none;
+    color: #000;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Fix for buttons looking like links */
+.price-button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
 }
