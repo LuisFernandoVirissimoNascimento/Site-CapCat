@@ -226,3 +226,9 @@ a:active {
 .header-nav a:hover {
     opacity: 0.8;
 }
+
+u {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
