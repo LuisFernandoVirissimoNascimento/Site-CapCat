@@ -71,6 +71,8 @@ const planRules = {
                 <li><strong>Publicação na Steam:</strong> R$ 500 ( Taxa da Steam ) + R$ 100 ( Serviço )
                 <li><strong>Multiplayer Local ou Online ( Online requer Publicação na Steam ):</strong> R$ 300
                 </li>
+                <li><strong>Chat de Voz Online:</strong> R$ 250</li>
+                <li><strong>Usar voz para ações:</strong> R$ 50</li>
             </ul>
             <p style="font-size: 0.85rem; color: #686464ff; margin-top: 15px;">
                 * Os valores acima são adicionais ao preço base do pacote.
