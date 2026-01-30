@@ -17,9 +17,9 @@ const planRules = {
         title: 'Regras: Jogo Simples',
         rules: `<ul>
                     <li>Entre em contato com capcatdev no discord para iniciar.</li>
-                    <li>Pagamento de 50% adiantado.</li>
+                    <li>Pagamento de 75% adiantado.</li>
                     <li>Prazo de entrega: 7 a 15 dias úteis.</li>
-                    <li>Inclui apenas 1 revisão de mecânica.</li>
+                    <li>Inclui apenas 3 revisões de mecânica.</li>
                     <li>Código fonte não incluso. Veja preços extras para saber mais.</li>
                     <li>Nosso time não irá produzir arte, música ou design, isso é responsabilidade do cliente.</li>
                     <p><strong>Tipos de jogos permitidos:</strong></p>
@@ -42,7 +42,7 @@ const planRules = {
     title: 'Regras: Jogo Completo (Experiência Premium)',
     rules: `<ul>
                 <li><strong>Prioridade Total:</strong> Entre em contato com capcatdev no discord para briefing imediato.</li>
-                <li><strong>Pagamento Seguro:</strong> 50% para iniciar + 50% após a entrega final.</li>
+                <li><strong>Pagamento Seguro:</strong> 75% para iniciar + 25% após a entrega final.</li>
                 <li><strong>Prazo VIP:</strong> 1 a 3 meses com relatórios quinzenais de progresso.</li>
                 <li><strong>Revisões Ilimitadas:</strong> Ajustamos cada detalhe até o jogo ficar perfeito.</li>
                 <li><strong>Full Ownership:</strong> Código fonte e Direito comercial inclusos (Zero taxas extras).</li>
@@ -59,21 +59,21 @@ const planRules = {
         rules: `<div class="modal-inner-content">
             <p><strong>Para modificadores que tornam seu jogo único no mercado:</strong></p>
             <ul class="modal-list">
-                <li><strong>Código fonte:</strong> R$ 100 + 5% do custo de Assets pagos</li>
-                <li><strong>Múltiplos Personagens:</strong> R$ 10 (por unidade extra)</li>
-                <li><strong>Múltiplas Armas:</strong> R$ 10 (por set de armas)</li>
-                <li><strong>Efeitos de Câmera (Juice):</strong> R$ 10 (Screenshake, Flash, Bloom)</li>
-                <li><strong>Cutscenes Estilizadas:</strong> R$ 10 (Texto animado + imagens)</li>
-                <li><strong>Sistema de Placar (Leaderboard):</strong> R$ 20</li>
-                <li><strong>Tradução (PT-BR / Inglês):</strong> R$ 15</li>
-                <li><strong>Suporte a Controle/Gamepad:</strong> R$ 15</li>
-                <li><strong>Conquistas:</strong> R$ 10</li>
-                <li><strong>Publicação na Steam:</strong> R$ 500 ( Taxa da Steam ) + R$ 100 ( Serviço )
-                <li><strong>Multiplayer Local ou Online ( Online requer Publicação na Steam ):</strong> R$ 300
+                <li><strong>Código fonte:</strong> R$ 300 + 5% do custo de Assets pagos</li>
+                <li><strong>Múltiplos Personagens:</strong> R$ 40 (por unidade extra)</li>
+                <li><strong>Múltiplas Armas:</strong> R$ 40 (por set de armas)</li>
+                <li><strong>Efeitos de Câmera (Juice):</strong> R$ 40 (Screenshake, Flash, Bloom)</li>
+                <li><strong>Cutscenes Estilizadas:</strong> R$ 40 (Texto animado + imagens)</li>
+                <li><strong>Sistema de Placar (Leaderboard):</strong> R$ 40</li>
+                <li><strong>Tradução (PT-BR / Inglês):</strong> R$ 100</li>
+                <li><strong>Suporte a Controle/Gamepad:</strong> R$ 100</li>
+                <li><strong>Conquistas:</strong> R$ 100</li>
+                <li><strong>Publicação na Steam:</strong> R$ 500 ( Taxa da Steam ) + R$ 400 ( Serviço )
+                <li><strong>Multiplayer Local ou Online ( Online requer Publicação na Steam ):</strong> R$ 500
                 </li>
                 <li><strong>Chat de Voz Online:</strong> R$ 250</li>
-                <li><strong>Usar voz para ações:</strong> R$ 50</li>
-                <li><strong>Arte, Música e Design:</strong> R$ Taxa do Artista + R$ 25 ( Serviço de contato e Gerenciamento )</li>
+                <li><strong>Usar voz para ações:</strong> R$ 250</li>
+                <li><strong>Arte, Música e Design:</strong> R$ Taxa do Artista + R$ 50 ( Serviço de contato e Gerenciamento )</li>
             </ul>
             <p style="font-size: 0.85rem; color: #686464ff; margin-top: 15px;">
                 * Os valores acima são adicionais ao preço base do pacote.
